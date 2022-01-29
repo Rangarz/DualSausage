@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/UI/MainMenu.unity
     guid: 65ac26cba35b29e49ad3f5552646f845
   - enabled: 1
+    path: Assets/Marco's_assets/test.unity
+    guid: bcc96a0e6e2c0324a8e71f0e065671b7
+  - enabled: 1
     path: Assets/UI/PauseTest.unity
     guid: 63be197941ec6a340bf96d01b0230f41
   m_configObjects: {}

@@ -57,11 +57,11 @@ public class IK_solver : MonoBehaviour
         }
     }
 
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.red;
-    //    Gizmos.DrawSphere(newPosition,0.5f);
-    //}
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(newPosition, 0.5f);
+    }
 
     public bool IsMoving()
     {
