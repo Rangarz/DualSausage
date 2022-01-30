@@ -5310,10 +5310,10 @@ RectTransform:
   m_Father: {fileID: 1245500948}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -155.18881, y: 143.28}
-  m_SizeDelta: {x: -346.52893, y: -313.00192}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 212.81119, y: -52.72}
+  m_SizeDelta: {x: 389.47107, y: 78.99808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1756670016
 MonoBehaviour:
@@ -5335,7 +5335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Title
+  m_text: Dual Sausage
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}

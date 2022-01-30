@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CheckDeath : MonoBehaviour
 {
-    
+    public bool isDeath = false;
     private void OnCollisionEnter(Collision collision)
     {
         var parentMovement = collision.gameObject.GetComponentInParent<PlayerMovement>();
@@ -12,8 +12,10 @@ public class CheckDeath : MonoBehaviour
 
         if(parentMovement != null || childMovement != null)
         {
-            
+            isDeath = true;
             Debug.Log("DEATH");
         }
     }
+
+
 }
