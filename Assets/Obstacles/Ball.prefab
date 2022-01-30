@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ae76c9df5a980d4da87b4ad1f23652f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TossForce: 3000
+  TossForce: 6000

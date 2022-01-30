@@ -6,12 +6,13 @@ public class TossBall : MonoBehaviour
 {
     public float TossForce = 100f;
 
+
     // Start is called before the first frame update
     void Start()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
 
-        rb.AddForce(Vector3.left * TossForce);
+        rb.AddForce(transform.forward * TossForce);
     }
 
     // Update is called once per frame

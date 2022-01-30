@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject ObjectToSpawn;
+    public List<GameObject> ObjectsToSpawn;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnObject", 1f, 3f);
+
+        InvokeRepeating("SpawnObject", 1f, Random.Range(1f, 3f));
     }
 
     void SpawnObject()
     {
-        Instantiate(ObjectToSpawn, gameObject.transform.position, gameObject.transform.rotation);
+        Instantiate(ObjectsToSpawn[Random.Range(0, ObjectsToSpawn.Count)], gameObject.transform.position, gameObject.transform.rotation);
     }
 }
