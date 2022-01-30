@@ -10,6 +10,8 @@ public class PauseMenu : MonoBehaviour
    public GameObject pauseMenuUI;
    public GameObject gameOverUI;
     public CheckDeath death;
+    public AudioSource audio;
+
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +29,7 @@ public class PauseMenu : MonoBehaviour
 
         if(death.isDeath)
         {
+
             GameOver();
         }
 
@@ -52,6 +55,7 @@ public class PauseMenu : MonoBehaviour
 
     public void GameOver()
     {
+        audio.Play();
         gameOverUI.SetActive(true);
         Time.timeScale = 0f;
     }

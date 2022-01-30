@@ -5,9 +5,8 @@ using UnityEngine.UI;
 
 public class Button : MonoBehaviour
 {
-   // public AudioSource audio;
-    public Image oldImage;
-    public Sprite newImage;
+   public AudioSource audio;
+
     // Use this for initialization
     void Start()
     {
@@ -16,8 +15,7 @@ public class Button : MonoBehaviour
 
     public void onHover()
     {
-        oldImage.sprite = newImage;
-       // if (audio) audio.Play();
+        if (audio) audio.Play();
         Debug.Log("hover");
     }
 
