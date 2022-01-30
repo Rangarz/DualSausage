@@ -7,8 +7,9 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
    public static bool GameIsPaused = false;
-    public GameObject pauseMenuUI;
-
+   public GameObject pauseMenuUI;
+   public GameObject gameOverUI;
+    public CheckDeath death;
     // Update is called once per frame
     void Update()
     {
@@ -23,6 +24,12 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
+
+        if(death.isDeath)
+        {
+            GameOver();
+        }
+
     }
 
     public void Resume()
@@ -42,6 +49,12 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
+    }
+
+    public void GameOver()
+    {
+        gameOverUI.SetActive(true);
+        Time.timeScale = 0f;
     }
 
 }
